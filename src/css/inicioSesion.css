@@ -33,7 +33,7 @@ body{
         font-family: 'Roboto Flex';
         border-radius: 5px;
       }
-      input[type="submit"]{
+   .botion-login{
         background: #d4e3fc;
         position: absolute;
         top: 55%;
@@ -45,6 +45,9 @@ body{
         border: 1px solid #bfcde6;
         font-size: 20px;
         font-family: 'Roboto Flex';
+      }
+      .botion-login a{
+        text-decoration: none;
       }
       .contra{
         position: absolute;
