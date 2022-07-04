@@ -18,7 +18,7 @@ if(email!="" && contraseña!="" && contraseña_confirm!=""){
                 bandera = 0;
                 alert("Bienvenido " + admi_list[i].email);
                 i = admi_list.length;
-                window.location.assign("/src/ProyectoIntegrador/src/html/vista-admi.html");
+                window.location.assign("../../src/html/vista-admi.html");
             } else {
                 bandera = 1;
             }
