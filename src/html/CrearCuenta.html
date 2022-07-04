@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../src/css/crearCuenta.css">
     <link rel="stylesheet" href="../Bootstrap5/css/bootstrap.css">
+    <script src="../../src/js/register-user.js"></script>
     <title>Registro</title>
 </head>
 <body>
@@ -44,15 +45,14 @@
         <section class="registro">
             <h3>Crea tu Cuenta</h3>
             <br>
-            <input class="controls" type="email" placeholder="Correo Electronico">
+            <input class="controls" type="user" id="user"placeholder="Usuario">
             <br>
-            <input class="controls" type="email" placeholder="Vefica E-mail">
+            <input class="controls" type="email" id="email"placeholder="Correo electrónico">
             <br>
-            <input class="controls" type="password" placeholder="Contraseña">
+            <input class="controls" type="password" id="password"placeholder="Contraseña">
             <br>
-            <input class="controls" type="submit" value="Registrarme">
-            <br>   
-            
+            <button class="boton-register" id="boton"type="submit" onclick="Register_user()">Registrarse</button>
+            <br>  
             <h5 class="acepto">Al crear mi cuenta acepto <br><a class="terminos" href="https://www.youtube.com/watch?v=Ann_CIuEfJw">Terminos y condiciones </a> del servicio de Salud +</h5>
         </section>
 

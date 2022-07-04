@@ -34,7 +34,7 @@ body{
         font-family: 'Roboto Flex';
         border-radius: 5px;
       }
-    input[type="submit"]{
+    .boton-register{
         background: #d4e3fc;
         position: absolute;
         top: 64%;

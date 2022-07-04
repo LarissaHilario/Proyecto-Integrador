@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../src/css/login-admi.css">   
     <link rel="stylesheet" href="../../src/Bootstrap5/css/bootstrap.css">
-<title>Registro</title>
+  <script src="../../src/js/login-admi.js"></script>
+    <title>Registro</title>
 </head>
 <body>
   <header>
@@ -45,13 +46,13 @@
     <section class="inicioSesion">    
         <h3>Bienvenido administrador</h3>
         <br>
-        <input class="controls" type="email" placeholder="E-mail">
+        <input class="controls" id="email"type="email" placeholder="E-mail">
         <br><br>
-        <input class="controls" type="password" placeholder="Contraseña">
+        <input class="controls" id="password" type="password" placeholder="Contraseña">
         <br><br>
-        <input class="controls" type="password" placeholder="Confirmar Contraseña">
+        <input class="controls" id="password-confirm" type="password" placeholder="Confirmar Contraseña">
         <br><br>
-        <botton class="btnIniciarSesion" type="submit"><a href="../../src/html/vista-admi.html">Iniciar Sesión</a></botton> 
-    </section>
+        <botton class="btnIniciarSesion" id="boton"type="submit" onclick="validar()">Iniciar Sesión</botton> 
+        </section>
 </body>
 </html> 

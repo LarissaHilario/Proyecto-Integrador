@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../src/css/inicioSesion.css">
     <link rel="stylesheet" href="../../src/Bootstrap5/css/bootstrap.css">
+    <script src="../../src/js/login-user.js"></script>
+    <script src="../../src/js/index.js"></script>
     <title>Inicio de Sesión</title>
 </head>
 <body>
@@ -45,13 +47,13 @@
     <section class="inicioSesion">
         <h3>Accede a tu cuenta</h3>
         <br>
-        <input class="controls" type="email" id="nombre" placeholder="Correo Electronico">
+        <input class="controls" type="text" id="user-gived" placeholder="Usuario">
         <br>
         <br>
-        <input class="controls" type="password" id="contraseña" placeholder="Contraseña">
+        <input class="controls" type="password" id="password-gived" placeholder="Contraseña">
         <br>
         <br>
-        <button class="botion-login" id="boton"type="submit"> <a href="../../src/html/vista-usuario.html">Inicio de Sesión</a></button>
+        <button class="botion-login" id="boton"type="submit" onclick="User_login()"> Inicio de Sesión</button>
 
         <a class="contra" href="https://www.youtube.com/watch?v=Ann_CIuEfJw">He olvidado mi contraseña</a>
         <h5 class="h5-login">¿Todavia sin cuenta?<a class="registro" href="../../src/html/CrearCuenta.html"> Quiero Registrarme</a></h5>

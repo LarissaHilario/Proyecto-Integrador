@@ -26,7 +26,7 @@ body{
       .controls{
         width: 100%;
         border: 1px solid rgb(255, 255, 255);
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         padding: 11px 10px;
         background: white;
         font-size: 14px;
@@ -46,12 +46,9 @@ body{
         font-size: 20px;
         font-family: 'Roboto Flex';
       }
-      .botion-login a{
-        text-decoration: none;
-      }
       .contra{
         position: absolute;
-        top: 69%;
+        top: 70%;
         left: 29%;
         color: blue;
         font-family: 'Roboto Flex';

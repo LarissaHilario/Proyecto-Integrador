@@ -46,6 +46,8 @@
         border: 1px solid #bfcde6;
         font-size: 20px;
         font-family: 'Roboto Flex';
+        text-align: center;
+        
       }
       h3{
         font-size: 24px;
@@ -53,7 +55,7 @@
         font-family: 'Antonio';
       }
 
-
+/* No borrar nunca xd 57-65*/ 
 .btn a{
   text-decoration: none;
 }
@@ -62,11 +64,4 @@
   color: white;
   text-decoration: none;
 }
-.btnIniciarSesion a{
-  position: relative;
-  left: 35%;
-  top: 10px;
-  text-decoration: none;
-  font-family: 'Roboto Flex';
-  color: rgb(7, 24, 255);
-}
+
