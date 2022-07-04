@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="../../libs/jquery.js"></script>
+    <script src="../../libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="../../src/Bootstrap5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../libs/bootstrap-datepicker/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="../../src/Bootstrap5/css/bootstrap.css">
     <link rel="stylesheet" href="../../src/css/vista-usuario.css">
 </head>
@@ -47,9 +51,43 @@
         <b class="Nombre-doctor-1">Genaro Cuesta</b>
         <p class="Especial-doctor-1">Odontólogo</p>
         <div class="rectangulo-de-info"></div>
+
+
+
+        <div class="position-boton">  
+          <button type="button" data-bs-toggle="modal" data-bs-target="#modal-date" class="btn btn-primary">Seleccionar fechas</button>
+  
+      </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modal-date" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" >Modal con datepicker</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+              <div class="input-group date fj-date ">
+                  <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-secondary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
     </div>
 
     <img src="../../src/images/ejemplo-form.jpeg" class="Imagen-form">
     
+    <script src="../../src/js/app.js"></script>
 </body>
 </html>
