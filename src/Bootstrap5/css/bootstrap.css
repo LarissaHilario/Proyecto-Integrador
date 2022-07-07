@@ -1178,6 +1178,8 @@ progress {
   }
 
   .col-md-6 {
+    position: absolute;
+    top: 20%;
     flex: 0 0 auto;
     width: 50%;
   }
