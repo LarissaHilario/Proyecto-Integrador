@@ -55,11 +55,17 @@
 
 
         <div class="position-boton">  
-          <button type="button" data-bs-toggle="modal" data-bs-target="#modal-date" class="btn btn-primary">Seleccionar fechas</button>
-  
+          <button type="button" class="btn btn-primary" onclick="fechasValidar()">Seleccionar fechas</button>
       </div>
+
+          <!-- input del calendario -->
+      <div class="input-group date fj-date position-input">
+        <input type="text" class="form-control" id="fecha-dada"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+      </div>
+
+
     
-    <!-- Modal -->
+    <!-- Modal 
     <div class="modal fade" id="modal-date" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -80,14 +86,13 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
 
 
     </div>
 
-    <img src="../../src/images/ejemplo-form.jpeg" class="Imagen-form">
     
     <script src="../../src/js/app.js"></script>
 </body>
