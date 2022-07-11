@@ -59,8 +59,105 @@
       </div>
 
           <!-- input del calendario -->
-      <div class="input-group date fj-date position-input">
-        <input type="text" class="form-control" id="fecha-dada"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+
+
+
+      <div class="FormularioCita"> 
+        <h3>¡Agenda tu cita ahora mismo!</h3>
+
+        <select class="controls-der" name="OpcionesClinicas">
+          <option value="0">Selecciona tu Clínica</option>
+          <option value="1">Tuxtla Gutiérrez</option>
+        </select>
+
+        <b>Selecciona tu fecha y horario</b>
+        <div class="input-group date fj-date">
+          <input type="text" class="controls-izq" id="fecha-dada" placeholder="Fecha"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+        </div>
+       
+        <select class="controls-der">
+          <option value="0">Seleccione una hora</option>
+          <option value="0">10:00</option>
+          <option value="0">10:30</option>
+          <option value="0">11:00</option>
+          <option value="0">11:30</option>
+          <option value="0">12:00</option>
+          <option value="0">12:30</option>
+          <option value="0">13:00</option>
+          <option value="0">13:30</option>
+          <option value="0">14:00</option>
+          <option value="0">14:30</option>
+          <option value="0">15:00</option>
+          <option value="0">15:30</option>
+          <option value="0">16:00</option>
+        </select>
+
+        <b>Registra tus datos personales</b>
+        <input type="text" class="controls-izq" id="NombreDado" placeholder="Nombre(s)">
+        <input type="text" class="controls-der" id="ApellidoP" placeholder="Apellido paterno">
+        <input type="text" class="controls-izq" id="ApellidoM" placeholder="Apellido materno">
+
+        <div class="input-group date fj-date">
+          <input type="text" class="controls-izq" id="" placeholder="Fecha de nacimiento"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+        </div>
+        <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="success-outlined">Mujer</label>
+
+        <input type="radio" class="btn-check" name="options-outlined" id="primary-outlined" autocomplete="off">
+        <label class="btn btn-outline-primary" for="primary-outlined">Hombre</label>
+
+        <select class="controls-der">
+          <option value="0">Estado Civil</option>
+          <option value="0">Soltero(a)</option>
+          <option value="0">Casado (a)</option>
+          <option value="0">Divorciado (a)</option>
+        </select>
+
+        <select class="controls-izq"name="Estado" >
+          <option value="0">Seleccione su estado</option>
+          <option value="1">Aguascalientes</option>
+          <option value="2">Baja California</option>
+          <option value="3">Baja California Sur</option>
+          <option value="4">Chiapas</option>
+          <option value="5">Chihuahua</option>
+          <option value="6">Ciudad de México</option>
+          <option value="7">Coahuila</option>
+          <option value="8">Colima</option>
+          <option value="9">Durango</option>
+          <option value="10">Estado de México</option>
+          <option value="11">Guanajuato</option>
+          <option value="12">Guerrero</option>
+          <option value="13">Hidalgo</option>
+          <option value="1">Jalisco</option>
+          <option value="1">Michoacán</option>
+          <option value="1">Morelos</option>
+          <option value="1">Nayarit</option>
+          <option value="1">Nuevo León</option>
+          <option value="1">Oaxaca</option>
+          <option value="1">Puebla</option>
+          <option value="1">Querétaro</option>
+          <option value="1">Quintana Roo</option>
+          <option value="1">San Luis Potosí</option>
+          <option value="1">Sinaloa</option>
+          <option value="1">Sonora</option>
+          <option value="1">Tabasco</option>
+          <option value="1">Tamaulipas</option>
+          <option value="1">Tlaxcala</option>
+          <option value="1">Veracruz</option>
+          <option value="1">Yucatán</option>
+          <option value="1">Zacatecas</option>
+        </select>
+
+        <input type="text" class="controls-izq" id="codigoPostal" placeholder="Código Postal" required>
+        <input type="text" class="controls-der" id="calleDireccion" placeholder="Calle" required>
+        <input type="text" class="controls-izq" id="numeroDireccion" placeholder="Número" required>
+        <input type="tel" class="controls-der" id="numeroTelefonico" placeholder="Número Telefónico" required>
+        <input type="email" class="controls-der" id="correoElectronico" placeholder="Correo electrónico (opcional)" required>
+        
+
+
+
+        
       </div>
 
 
