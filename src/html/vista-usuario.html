@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="../../libs/jquery.js"></script>
-    <script src="../../libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script>
+      window.$ = window.jQuery = require("../../libs/jquery.js");
+    </script>
+    <script src="../../libs/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
     <script src="../../src/Bootstrap5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../libs/bootstrap-datepicker/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="../../src/Bootstrap5/css/bootstrap.css">
@@ -45,21 +47,15 @@
         </div>
     </header>
 
-    <div class="Middle">
-        <div class="circulo1"></div>
-        <a class="doctor-1" href="../../src/html/inicioSesion.html"><img src="../../src/images/doctor-1.png"></a>
-        <b class="Nombre-doctor-1">Genaro Cuesta</b>
-        <p class="Especial-doctor-1">Odontólogo</p>
-        <div class="rectangulo-de-info"></div>
+  
 
-
-
+<!-- 
         <div class="position-boton">  
           <button type="button" class="btn btn-primary" onclick="fechasValidar()">Seleccionar fechas</button>
       </div>
 
-          <!-- input del calendario -->
-
+          input del calendario -->
+<!-- 
 
 
       <div class="FormularioCita"> 
@@ -106,14 +102,7 @@
         <input type="radio" class="btn-check" name="options-outlined" id="primary-outlined" autocomplete="off">
         <label class="btn btn-outline-primary" for="primary-outlined">Hombre</label>
 
-        <select class="controls-der">
-          <option value="0">Estado Civil</option>
-          <option value="0">Soltero(a)</option>
-          <option value="0">Casado (a)</option>
-          <option value="0">Divorciado (a)</option>
-        </select>
-
-        <select class="controls-izq"name="Estado" >
+        <select class="controls-izq"name="Estado">
           <option value="0">Seleccione su estado</option>
           <option value="1">Aguascalientes</option>
           <option value="2">Baja California</option>
@@ -152,7 +141,7 @@
         <input type="text" class="controls-der" id="calleDireccion" placeholder="Calle" required>
         <input type="text" class="controls-izq" id="numeroDireccion" placeholder="Número" required>
         <input type="tel" class="controls-der" id="numeroTelefonico" placeholder="Número Telefónico" required>
-        <input type="email" class="controls-der" id="correoElectronico" placeholder="Correo electrónico (opcional)" required>
+        <input type="email" class="controls-der" id="correoElectronico" placeholder="Correo electrónico (opcional)">
         
 
 
@@ -162,7 +151,7 @@
 
 
     
-    <!-- Modal 
+    Modal 
     <div class="modal fade" id="modal-date" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -185,9 +174,116 @@
       </div>
     </div> -->
 
+    <div>
+        <form class="form-register">
+          <h2 class="form-titulo">¡Agenda tu cita ahora mismo!</h2>
+          <div class="contenedor-inputs">
+            <select class="select-100" name="OpcionesClinicas">
+              <option value="0">Selecciona tu Clínica</option>
+              <option value="1">Tuxtla Gutiérrez</option>
+            </select>
+
+            <p class="">Selecciona tu fecha y horario</p>
+            <div class="input-group date fj-date">
+              <input type="text" class="input-100" id="fecha-dada" placeholder="Fecha"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+            </div>
+            <select class="select-100">
+              <option value="0">Seleccione una hora</option>
+              <option value="0">10:00</option>
+              <option value="0">10:30</option>
+              <option value="0">11:00</option>
+              <option value="0">11:30</option>
+              <option value="0">12:00</option>
+              <option value="0">12:30</option>
+              <option value="0">13:00</option>
+              <option value="0">13:30</option>
+              <option value="0">14:00</option>
+              <option value="0">14:30</option>
+              <option value="0">15:00</option>
+              <option value="0">15:30</option>
+              <option value="0">16:00</option>
+            </select>
+            
+        <b>Registra tus datos personales</b>
+        <input type="text" class="input-48" id="NombreDado" placeholder="Nombre(s)">
+        <input type="text" class="input-48" id="ApellidoP" placeholder="Apellido paterno">
+        <input type="text" class="input-48" id="ApellidoM" placeholder="Apellido materno">
+            
+        <input type="radio" class="input-label"  name="options" id="option1" autocomplete="off">
+        <label class="label-radio" for="option1">Mujer</label>
+        
+        <input class="input-label" type="radio"name="options" id="option2" autocomplete="off">
+        <label class="label-radio" for="option2">Hombre</label>
+
+        <div class="input-group date fj-date">
+          <input type="text" class="input-100" id="" placeholder="Fecha de nacimiento"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+        </div>
+
+        <select class="select-48"name="Estado">
+          <option value="0">Seleccione su estado</option>
+          <option value="1">Aguascalientes</option>
+          <option value="2">Baja California</option>
+          <option value="3">Baja California Sur</option>
+          <option value="4">Chiapas</option>
+          <option value="5">Chihuahua</option>
+          <option value="6">Ciudad de México</option>
+          <option value="7">Coahuila</option>
+          <option value="8">Colima</option>
+          <option value="9">Durango</option>
+          <option value="10">Estado de México</option>
+          <option value="11">Guanajuato</option>
+          <option value="12">Guerrero</option>
+          <option value="13">Hidalgo</option>
+          <option value="1">Jalisco</option>
+          <option value="1">Michoacán</option>
+          <option value="1">Morelos</option>
+          <option value="1">Nayarit</option>
+          <option value="1">Nuevo León</option>
+          <option value="1">Oaxaca</option>
+          <option value="1">Puebla</option>
+          <option value="1">Querétaro</option>
+          <option value="1">Quintana Roo</option>
+          <option value="1">San Luis Potosí</option>
+          <option value="1">Sinaloa</option>
+          <option value="1">Sonora</option>
+          <option value="1">Tabasco</option>
+          <option value="1">Tamaulipas</option>
+          <option value="1">Tlaxcala</option>
+          <option value="1">Veracruz</option>
+          <option value="1">Yucatán</option>
+          <option value="1">Zacatecas</option>
+        </select>
+
+        <input type="text" class="select-48" id="codigoPostal" placeholder="Código Postal" required>
+        <input type="text" class="select-48" id="calleDireccion" placeholder="Calle" required>
+        <input type="text" class="select-48" id="numeroDireccion" placeholder="Número" required>
+        <input type="tel" class="select-48" id="numeroTelefonico" placeholder="Número Telefónico" required>
+        <input type="email" class="select-48" id="correoElectronico" placeholder="Correo electrónico" required>
+
+        <select class="select-48" name="OpcionesDoctores">
+          <option value="0">Selecciona el área</option>
+          <option value="1">Psicólogo</option>
+          <option value="1">Nutriólogo</option>
+          <option value="1">Cardiólogo</option>
+          <option value="1">Odontólogo</option>
+          <option value="1">Neumólogo</option>
+          <option value="1">Neurocirujano</option>
+          <option value="1">Otorinolaringólogo</option>
+          <option value="1">Nefrólogo</option>
+        </select>
+        <input type="text" class="select-48" id="idk" placeholder="No se que poner aqui" required>
+
+
+        
+        <input type="submit" value="Enviar" class="btn-enviar" onclick="fechasValidar()" required>
 
 
 
+
+            <p class="form-link">Ya tienes una cuenta? <a href="#">Ingresa aquí</a></p>
+          </div>
+
+        </form>
     </div>
 
     
